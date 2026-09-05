@@ -16,8 +16,8 @@ contactForm.addEventListener("submit", async (event) => {
     try {
         submitButton.textContent = "Sending...";
         submitButton.disabled = true;
-
-        const response = await fetch("http://localhost:5000/api/contact", {
+        const response = await fetch("https://personal-portfolio-xzr1.onrender.com/api/contact", {
+     
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
